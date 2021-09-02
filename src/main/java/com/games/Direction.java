@@ -1,4 +1,4 @@
-package com.sberschool;
+package com.games;
 
 public enum Direction {
     UP("вверх"),

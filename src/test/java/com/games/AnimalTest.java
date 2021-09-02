@@ -1,4 +1,4 @@
-package com.sberschool;
+package com.games;
 
 import org.junit.After;
 import org.junit.Before;
@@ -46,7 +46,7 @@ public class AnimalTest {
 
     @Test
     public void isHunger() {
-        assertEquals(true,caw.isHunger());
+        assertTrue(caw.isHunger());
     }
 
     @Test

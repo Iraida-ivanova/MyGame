@@ -1,4 +1,4 @@
-package com.sberschool;
+package com.games;
 
 import java.util.List;
 import java.util.Objects;

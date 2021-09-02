@@ -1,4 +1,4 @@
-package com.sberschool;
+package com.games;
 
 import org.apache.commons.lang3.StringUtils;
 

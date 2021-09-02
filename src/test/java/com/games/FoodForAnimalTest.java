@@ -1,4 +1,4 @@
-package com.sberschool;
+package com.games;
 
 import org.junit.After;
 import org.junit.Assert;

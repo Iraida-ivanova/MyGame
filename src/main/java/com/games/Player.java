@@ -1,4 +1,4 @@
-package com.sberschool;
+package com.games;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -136,7 +136,7 @@ public class Player {
                            if (foodForAnimal!=null){
                                if(foodForAnimal.getFoods().contains(food)){
                                    if(animal.getFood().getName().equals(food.getName())){
-                                       if(location.getAnimal().isHunger()==true){
+                                       if(location.getAnimal().isHunger()){
                                            foodForAnimal.getFoods().remove(food);
                                            location.getAnimal().setHunger(false);
                                            System.out.println(location.getAnimal().isHungry());

@@ -1,10 +1,15 @@
-package com.sberschool;
+package com.games;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 
-public class Main {
-    public static void main(String[] args) {
+public class Game {
+    Player player = new Player();
+    public Game(){
+    }
+    public void start(Player player){
         Location stall = new Location("стойло", "В стойле живет корова. Севернее грядка с морковью, центр на западе. На втором этаже находится сеновал");
         Location hayloft = new Location("сеновал", "На сеновале хранится сено. Спустившись вниз, ты окажешься в стойле. ");
         Location henHouse = new Location("курятник", "В курятнике живут курицы. На севере амбар с зерном. Восточнее находится центр фермы.");
@@ -61,7 +66,7 @@ public class Main {
         stall.setAnimal(caw);
         henHouse.setAnimal(hen);
         warren.setAnimal(rabbit);
-        Player player = new Player();
+
         player.setLocation(centre);
         player.setCountFedAnimals(0);
         ExecutorTheCommand executorTheCommand = new ExecutorTheCommand(player);
@@ -73,13 +78,8 @@ public class Main {
         System.out.println("Для обозначения животных,предметов,еды используй слова в единственном числе и именительном падеже. Пример команды:\"накормить корова\"");
         System.out.println("Чтобы начать - введи \"старт\".Чтобы закончить - введи \"выйти\"");
 
-        Scanner scanner = new Scanner(System.in);
-
-        while (scanner.hasNextLine()&& executorTheCommand.stop==false) {
-            executorTheCommand.executeCommand(scanner.nextLine());
-        }
-        scanner.close();
     }
 
 
 }
+
